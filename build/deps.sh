@@ -621,7 +621,7 @@ cpp-wedges() {
 
   echo python3 $PY3_VERSION $ROOT_WEDGE_DIR
   echo mypy $MYPY_VERSION $USER_WEDGE_DIR
-  #echo souffle $SOUFFLE_VERSION $USER_WEDGE_DIR
+  echo souffle $SOUFFLE_VERSION $USER_WEDGE_DIR
 
   # py3-libs has a built time dep on both python3 and MyPy, so we're doing it
   # separately for now
