@@ -124,21 +124,21 @@ rm-oils-crap() {
 # PY3_BUILD_DEPS - I think these will be used for building the Python 2 wedge
 # as well
 readonly -a WEDGE_DEPS_DEBIAN=(
-    bzip2 
-    wget
-    tree
-    gawk 
-    g++ 
-    ninja-build
-    cmake
-    libreadline-dev 
-    systemtap-sdt-dev
+  bzip2 
+  wget
+  tree
+  gawk 
+  g++ 
+  ninja-build
+  cmake
+  libreadline-dev 
+  systemtap-sdt-dev
 
-    # for Souffle, flex and bison
-    flex 
-    bison
+  # for Souffle, flex and bison
+  flex 
+  bison
 
-    "${PY3_BUILD_DEPS[@]}"
+  "${PY3_BUILD_DEPS[@]}"
 )
 
 readonly -a WEDGE_DEPS_ALPINE=(
@@ -159,6 +159,10 @@ readonly -a WEDGE_DEPS_ALPINE=(
   openssl-dev
 
   ncurses-dev
+
+  # for Souffle, flex and bison
+  flex 
+  bison
 )
 
 readonly -a WEDGE_DEPS_FEDORA=(
